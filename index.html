@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sgomberi e Traslochi Alessandria | Veloci, Certificati e Senza Stress</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'navy': '#0B1D3A',
+                        'navy-light': '#132D55',
+                        'gold': '#F59E0B',
+                        'gold-dark': '#D97706',
+                        'gold-light': '#FDE68A',
+                    },
+                    fontFamily: { 'sans': ['Inter', 'sans-serif'] },
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background: #fff; color: #1E293B; font-family: 'Inter', sans-serif; }
+        .bg-navy-gradient { background: linear-gradient(135deg, #0B1D3A 0%, #132D55 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(11,29,58,0.1); }
+        .shadow-gold { box-shadow: 0 4px 14px rgba(245,158,11,0.25); }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Navbar -->
+    <header class="fixed w-full z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+        <nav class="container mx-auto px-5 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-9 h-9 rounded-lg bg-gold flex items-center justify-center text-white text-sm font-bold"><i class="fas fa-truck"></i></div>
+                <div><div class="text-sm font-bold text-navy leading-tight">Sgomberi & Traslochi</div><div class="text-[10px] text-navy/50 font-semibold tracking-wider">ALESSANDRIA</div></div>
+            </div>
+            <a href="tel:3520577489" class="hidden md:flex items-center gap-2 px-4 py-2 bg-gold text-navy font-bold rounded-xl hover:bg-gold-dark transition shadow-gold text-sm"><i class="fas fa-phone-alt"></i>352 057 7489</a>
+            <button id="menu-toggle" class="md:hidden text-xl text-navy"><i class="fas fa-bars"></i></button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 py-5 px-5">
+            <ul class="flex flex-col space-y-4 text-center">
+                <li><a href="#servizi" class="block py-2 text-sm font-semibold text-navy">Servizi</a></li>
+                <li><a href="#recensioni" class="block py-2 text-sm font-semibold text-navy">Recensioni</a></li>
+                <li><a href="#contatti" class="block py-2 text-sm font-semibold text-navy">Contatti</a></li>
+                <li><a href="tel:3520577489" class="inline-block px-8 py-3 bg-gold text-navy font-bold rounded-xl mx-auto text-sm"><i class="fas fa-phone-alt mr-2"></i>352 057 7489</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="bg-navy-gradient pt-28 pb-16 md:pt-36 md:pb-20 relative overflow-hidden">
+        <div class="absolute top-20 right-0 w-64 h-64 bg-gold/5 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-10 left-0 w-48 h-48 bg-white/5 rounded-full blur-3xl"></div>
+        <div class="container mx-auto px-5 relative z-10">
+            <div class="max-w-2xl">
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="px-3 py-1.5 bg-white/10 backdrop-blur-sm rounded-full text-white text-[11px] font-semibold border border-white/10"><i class="fas fa-clock text-gold mr-1"></i>Aperti 24/7</span>
+                    <span class="px-3 py-1.5 bg-white/10 backdrop-blur-sm rounded-full text-white text-[11px] font-semibold border border-white/10"><i class="fas fa-calculator text-gold mr-1"></i>Preventivo Gratuito</span>
+                    <span class="px-3 py-1.5 bg-white/10 backdrop-blur-sm rounded-full text-white text-[11px] font-semibold border border-white/10"><i class="fas fa-user-check text-gold mr-1"></i>Personale Qualificato</span>
+                </div>
+                <h1 class="text-3xl md:text-5xl font-extrabold text-white leading-[1.15] mb-5">Sgomberi e Traslochi ad Alessandria – <span class="text-gold">Veloci, Certificati e Senza Stress</span></h1>
+                <p class="text-white/70 text-base md:text-lg leading-relaxed mb-8 max-w-lg">Dall'appartamento al locale commerciale, svuotiamo e traslochiamo i tuoi spazi in modo impeccabile e a prezzi competitivi.</p>
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <a href="tel:3520577489" class="px-8 py-4 bg-gold text-navy font-bold rounded-xl hover:bg-gold-dark transition shadow-gold text-center text-base"><i class="fas fa-file-invoice mr-2"></i>Richiedi un Preventivo Gratuito</a>
+                    <a href="https://wa.me/393520577489" target="_blank" class="px-8 py-4 border-2 border-white/20 text-white font-semibold rounded-xl hover:bg-white/10 transition text-center text-base"><i class="fab fa-whatsapp mr-2"></i>Scrivici su WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Numeri -->
+    <section class="py-10 bg-white border-b border-slate-100">
+        <div class="container mx-auto px-5">
+            <div class="grid grid-cols-3 gap-4 text-center">
+                <div><div class="text-2xl md:text-3xl font-extrabold text-gold">24/7</div><div class="text-xs text-slate-500 font-semibold">Sempre Aperti</div></div>
+                <div><div class="text-2xl md:text-3xl font-extrabold text-gold">100%</div><div class="text-xs text-slate-500 font-semibold">Clienti Soddisfatti</div></div>
+                <div><div class="text-2xl md:text-3xl font-extrabold text-gold">€</div><div class="text-xs text-slate-500 font-semibold">Prezzi Competitivi</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servizi -->
+    <section id="servizi" class="py-16 md:py-20 bg-slate-50">
+        <div class="container mx-auto px-5">
+            <h2 class="text-2xl md:text-3xl font-extrabold text-navy text-center mb-3">I Nostri <span class="text-gold">Servizi</span></h2>
+            <p class="text-slate-500 text-center max-w-lg mx-auto mb-10 text-sm">Soluzioni complete per sgomberi e traslochi nel territorio alessandrino</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl mx-auto">
+                <div class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-slate-200 card-hover">
+                    <div class="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center text-xl text-gold mb-5"><i class="fas fa-building"></i></div>
+                    <h3 class="text-lg font-bold text-navy mb-2">Sgombero Appartamenti, Cantine e Mansarde</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Liberiamo i tuoi spazi in modo rapido e ordinato. Ci occupiamo di tutto: smontaggio, carico e smaltimento.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-slate-200 card-hover">
+                    <div class="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center text-xl text-gold mb-5"><i class="fas fa-truck-moving"></i></div>
+                    <h3 class="text-lg font-bold text-navy mb-2">Traslochi Nazionali e Locali</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Dal trasloco in città a quello nazionale. Imballaggio, trasporto e riconsegna con massima cura dei tuoi beni.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-slate-200 card-hover">
+                    <div class="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center text-xl text-gold mb-5"><i class="fas fa-recycle"></i></div>
+                    <h3 class="text-lg font-bold text-navy mb-2">Gestione e Smaltimento Rifiuti / Materiali</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Smaltimento certificato di mobili, elettrodomestici e materiali ingombranti nel rispetto delle normative ambientali.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-slate-200 card-hover">
+                    <div class="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center text-xl text-gold mb-5"><i class="fas fa-store"></i></div>
+                    <h3 class="text-lg font-bold text-navy mb-2">Sgombero Locali Commerciali e Uffici</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Sgomberi professionali per negozi, uffici e attività commerciali. Minimo impatto sulla tua operatività.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-5">
+            <div class="grid md:grid-cols-2 gap-10 items-center max-w-5xl mx-auto">
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-navy mb-6">Perché <span class="text-gold">Scegliere Noi</span></h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-4"><div class="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center text-gold shrink-0 mt-0.5"><i class="fas fa-bolt text-xs"></i></div><div><strong class="text-navy">Velocità</strong><p class="text-slate-500 text-sm">Interventi rapidi e puntuali, rispettiamo sempre i tempi concordati.</p></div></li>
+                        <li class="flex items-start gap-4"><div class="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center text-gold shrink-0 mt-0.5"><i class="fas fa-euro-sign text-xs"></i></div><div><strong class="text-navy">Buon prezzo</strong><p class="text-slate-500 text-sm">Prezzi competitivi e trasparenti. Preventivo gratuito senza impegno.</p></div></li>
+                        <li class="flex items-start gap-4"><div class="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center text-gold shrink-0 mt-0.5"><i class="fas fa-hand-holding-heart text-xs"></i></div><div><strong class="text-navy">Cura dei mobili</strong><p class="text-slate-500 text-sm">Molto attenti nel maneggiare i mobili, imballaggio professionale per proteggere ogni oggetto.</p></div></li>
+                        <li class="flex items-start gap-4"><div class="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center text-gold shrink-0 mt-0.5"><i class="fas fa-shield-alt text-xs"></i></div><div><strong class="text-navy">Personale qualificato</strong><p class="text-slate-500 text-sm">Team esperto, cortese e disponibile. Lavoro eseguito in modo impeccabile.</p></div></li>
+                    </ul>
+                </div>
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200">
+                    <h3 class="text-lg font-bold text-navy mb-5 flex items-center gap-2"><i class="fas fa-star text-gold"></i> Recensioni dei clienti</h3>
+                    <div class="space-y-5">
+                        <div class="flex gap-4"><div class="w-10 h-10 rounded-full bg-navy text-white flex items-center justify-center text-sm font-bold shrink-0">IJ</div><div><div class="flex text-gold text-xs mb-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="text-slate-600 text-sm">"Servizio eccellente! Puntuali, professionali e molto attenti nel maneggiare i mobili."</p><span class="text-xs text-slate-400 font-semibold mt-1 block">— Ivan Jaures</span></div></div>
+                        <div class="border-t border-slate-200 pt-5 flex gap-4"><div class="w-10 h-10 rounded-full bg-navy text-white flex items-center justify-center text-sm font-bold shrink-0">MT</div><div><div class="flex text-gold text-xs mb-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="text-slate-600 text-sm">"Molto veloci e cortesi e a buon prezzo, li consiglio."</p><span class="text-xs text-slate-400 font-semibold mt-1 block">— Maurizio Tiziano</span></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Grid -->
+    <section id="recensioni" class="py-16 bg-slate-50">
+        <div class="container mx-auto px-5">
+            <h2 class="text-2xl md:text-3xl font-extrabold text-navy text-center mb-3">Cosa dicono <span class="text-gold">i nostri clienti</span></h2>
+            <p class="text-slate-500 text-center max-w-lg mx-auto mb-10 text-sm">La nostra reputazione è il nostro miglior biglietto da visita</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
+                <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-200"><div class="flex text-gold text-xs mb-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="text-slate-600 text-sm leading-relaxed">"Servizio eccellente! Puntuali, professionali e molto attenti nel maneggiare i mobili. Hanno reso il trasloco semplice e senza stress. Consigliatissimi."</p><div class="mt-4 text-sm font-bold text-navy">Ivan Jaures</div></div>
+                <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-200"><div class="flex text-gold text-xs mb-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="text-slate-600 text-sm leading-relaxed">"Molto veloci e cortesi e a buon prezzo, li consiglio."</p><div class="mt-4 text-sm font-bold text-navy">Maurizio Tiziano</div></div>
+                <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-200"><div class="flex text-gold text-xs mb-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="text-slate-600 text-sm leading-relaxed">"Lavoro eseguito in modo impeccabile."</p><div class="mt-4 text-sm font-bold text-navy">Marisa Viazzi</div></div>
+                <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-200"><div class="flex text-gold text-xs mb-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="text-slate-600 text-sm leading-relaxed">"Bravi tutti complimenti. Consiglio."</p><div class="mt-4 text-sm font-bold text-navy">Alessandria</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fake contact section -->
+    <section id="contatti" class="py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-5">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-2xl md:text-3xl font-extrabold text-navy mb-4">Richiedi il tuo <span class="text-gold">preventivo gratuito</span></h2>
+                <p class="text-slate-500 mb-10">Un nostro operatore ti risponderà entro poche ore</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="tel:3520577489" class="px-10 py-4 bg-gold text-navy font-bold rounded-xl hover:bg-gold-dark transition shadow-gold text-lg"><i class="fas fa-phone-alt mr-2"></i>352 057 7489</a>
+                    <a href="https://wa.me/393520577489" target="_blank" class="px-10 py-4 border-2 border-navy text-navy font-bold rounded-xl hover:bg-navy hover:text-white transition text-lg"><i class="fab fa-whatsapp mr-2"></i>Scrivici su WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-navy text-white/60">
+        <div class="container mx-auto px-5">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <div class="flex items-center gap-2 justify-center md:justify-start mb-4"><div class="w-8 h-8 rounded-lg bg-gold flex items-center justify-center text-navy text-sm"><i class="fas fa-truck"></i></div><span class="text-white font-bold text-sm">Sgomberi & Traslochi Alessandria</span></div>
+                    <p class="text-sm">Via Pavia, 31<br>15121 Alessandria AL</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4">Contatti</h4>
+                    <a href="tel:3520577489" class="text-gold font-bold text-lg hover:underline">352 057 7489</a>
+                    <p class="text-sm mt-2"><i class="fas fa-clock mr-2 text-gold"></i>Aperto 24 ore su 24</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4">Servizi</h4>
+                    <ul class="text-sm space-y-1"><li>Sgomberi</li><li>Traslochi</li><li>Smaltimento Rifiuti</li><li>Locali Commerciali</li></ul>
+                </div>
+            </div>
+            <div class="mt-10 pt-6 border-t border-white/10 text-center text-[11px] uppercase tracking-widest">
+                &copy; 2026 Sgomberi e Traslochi Alessandria. Tutti i diritti riservati.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mt = document.getElementById('menu-toggle'), mm = document.getElementById('mobile-menu');
+        if(mt) mt.addEventListener('click', () => mm.classList.toggle('hidden'));
+        document.querySelectorAll('a[href^="#"]').forEach(a => { a.addEventListener('click', function(e) { const h = this.getAttribute('href'); if(h && h.startsWith('#')) { e.preventDefault(); const t = document.querySelector(h); if(t) t.scrollIntoView({behavior:'smooth'}); } if(mm) mm.classList.add('hidden'); }); });
+    </script>
+</body>
+</html>
